@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
+    background-color: #1e1e1e;
+}
+body{
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*-----------------------------------------------------------------*/
+.btn{
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s;
+    z-index: 2;
+}
+.btn.click{
+    left: 280px;
+}
+.btn span{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn.click span:before{
+    content:'\f00d';
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: purple;
+    transition: left 0.4s ease;
+    margin-top: -0.5%;
+}
+.sidebar.show{
+    left: 0px;
+    z-index: 2;
+}
+.sidebar .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+nav  ul{
+     background: #1b1b1b;
+     height: 100%;
+     width: 100%;
+     list-style: none;
+}
+nav  ul  li{
+    line-height: 60px;
+    border-bottom: 1px solid grey;
+}
+nav  ul  li:last-child{
+    border-bottom: 1px solid pink;
+}
+nav  ul  li  a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav  ul  li.active a{
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+nav ul .about-show.show{
+    display: block;
+}
+nav ul .category-show.show1{
+    display: block;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+nav ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+nav  ul  li.active ul li a{
+    color: #e6e6e6;
+    background: #1b1b1b;
+    border-left-color: transparent;
+}
+nav  ul ul li a:hover{
+    color: cyan!important;
+    background: #1e1e1e!important;
+}
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+nav ul li a:hover span{
+    transform: translateY(-50%) rotate(-180deg);
+}
+/* ----------------------------------------------------------------*/
+
+.section{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider{
+    position: absolute;
+    width: 1900px;
+    height: 940px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 500%;
+    height: 500%;
+    display: flex;
+}
+.slide input{
+    display:none
+}
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width:  1900px;
+    height: 940px;
+}
+.nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top:-40px ;
+    justify-content:center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child){
+    margin-right: 50px;
+}
+.m-btn:hover{
+    background-color: aqua;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 30% ;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid pink;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+.nav-auto div:not(:last-child){
+    margin-right:30px ;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: pink;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: pink;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: pink;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color: pink;
+}
+
+/*--------------------------------------------------------------------------------------*/
+#sec1{
+    font-size: 60px;
+    color: white;
+    z-index: 2;
+    border: 5px solid white;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    border-radius: 150px;
+    cursor: pointer;
+    background-color: black;
+}
+#sec1:hover {
+    background-color: white;
+    rotate: 270deg;
+    transition-duration: 0.5s;
+}
+#sec1 span{
+    background-color: transparent;
+}
+#sec1 span:hover{
+    rotate: 360deg;
+    transition-duration: 1s;
+    color: purple;
+}
+#sec1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*--------------------------------------------------------------------------------------------------*/

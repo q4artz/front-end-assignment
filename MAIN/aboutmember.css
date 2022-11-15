@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    overflow: hidden;
+}
+html{
+    color-scheme: dark !important;
+}
+.less{
+    position: static;
+    z-index: 1;
+    height: 950px;
+    width: 1700px;
+    margin-left:0%;
+}
+.wrapper{
+    animation: transitionIn 1.5s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        margin-left: -200%;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+.box1 {
+    position: absolute;
+    background-color: rgb(255, 139, 164) ;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.75s cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+.about-us{
+    position: absolute;
+    color: whitesmoke;
+    margin-top: 330px;
+    margin-left: 40%;
+    opacity: 1;
+}
+.about-us h1{
+    text-align: right;
+    margin-left: 21%;
+    font-size: 50px;
+    margin-left: 19%;
+    font-size: 60px;
+    overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+}
+.about-us h3{
+    text-align: right;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing1 1.5s steps(40, end),
+      blink-caret1 .75s step-end infinite;
+  }
+  @keyframes typing1 {
+      from { width: 0 }
+      to { width: 100% }
+  }
+  @keyframes blink-caret1 {
+      from, to { border-color: transparent }
+      50% { border-color: transparent; }
+  }
+/*-----------------------------------------------------------------*/
+.topbar{
+    animation: slidein1 2.3s;
+}
+@keyframes slidein1{
+    from{
+        margin-left: -500%
+    }
+    to{
+        margin-left:0%;
+    }
+}
+.top1 img{
+    position: absolute;
+    rotate: 180deg;
+    height: 80px;
+    margin-left: -200px;
+    margin-top: -0.5%;
+}
+#home img{
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+.text1{
+    position: absolute;
+    display:none;
+    margin-top: -10px;
+    margin-left: 370px;
+    color: black;
+    font-size: 30px;
+}
+#home img:hover + .text1{
+    rotate: 360deg;
+    transition: 1s;
+    display:block;
+    animation:
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    50%{
+        width: 50%;
+    }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+}
+#register img{
+    margin-left: 90px;
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+.text2{
+    position: absolute;
+    display:none;
+    margin-top: -10px;
+    margin-left: 370px;
+    color: black;
+    font-size: 30px;
+}
+#register img:hover + .text2{
+    rotate: 360deg;
+    transition: 1s;
+    display:block;
+    animation:
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    50%{
+        width: 50%;
+    }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+}
+#category img{
+    margin-left: 170px;
+    margin-top: 5px;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    cursor: pointer;
+}
+.text3{
+    position: absolute;
+    display:none;
+    margin-top: -10px;
+    margin-left: 370px;
+    color: black;
+    font-size: 30px;
+}
+#category img:hover + .text3{
+    rotate: 360deg;
+    transition: 1s;
+    display:block;
+    animation:
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    50%{
+        width: 50%;
+    }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+}
+#buy img{
+    margin-left: 250px;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+.text4{
+    position: absolute;
+    display:none;
+    margin-top: -10px;
+    margin-left: 370px;
+    color: black;
+    font-size: 30px;
+}
+#buy img:hover + .text4{
+    rotate: 360deg;
+    transition: 1s;
+    display:block;
+    animation:
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    50%{
+        width: 50%;
+    }
+    to { width: 100% }
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+#sec1{
+    font-size: 60px;
+    color: white;
+    z-index: 2;
+    border: 5px solid white;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    border-radius: 150px;
+    cursor: pointer;
+    background-color: black;
+}
+#sec1 span{
+    background-color:transparent;
+   
+}
+#sec1:hover {
+    background-color: white;
+    rotate: 270deg;
+    transition-duration: 0.5s;
+}
+#sec1 span:hover{
+    rotate: 360deg;
+    transition-duration: 1s;
+    color: aquamarine;
+}
+#sec1:active {
+  background-color:rgb(206, 86, 233);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About YYDS</title>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="aboutmember.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="sec1">
+            <span class="fas fa-caret-down third"></span></a>
+        </button>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="about-us">
+            <h1>About Our Members</h1>
+            <br>
+          <h3>Compose of like-minded indivisuals.<br>
+            We are currently studying in year 20XX <br> 
+           of our 20YY course</h3>
+        </div>
+    </div> 
+    <div class="topbar">
+        <div class="top1"><img src="top1.png"></div> 
+        <div id="home"><img src="home.png">
+            <div class="text1">Home</div>
+        </div>
+        <div id="register"><img src="register.jpg" alt="Register Now!!">
+            <div class="text2">Register!!</div>
+        </div>
+        <div id="category"><img src="category.png">
+            <div class="text3">Category!</div>
+        </div>
+        <div id="buy"><img src="buy.png">
+            <div class="text4">Buy!!</div>
+        </div>
+    </div>
+    <div class="less">
+        <video autoplay loop muted plays-inline>
+            <source src="vid.mp4">
+        </video>
+    </div>
+    
+    <script>
+      document.getElementById('sec1').onclick = function(){
+            location.href = "/MAIN/main.html"
+        };
+       document.getElementById('register').onclick = function(){
+        location.href ="/registiration/register.html"
+       }
+       document.getElementById('home').onclick = function(){
+        location.href ="/MAIN/main.html"
+       }
+       document.getElementById('buy').onclick = function(){
+        location.href = "/jethao-ass/product.html"
+       }
+       document.getElementById('category').onclick = function(){
+        location.href = "/Ass/product.html"
+       }
+       $('#bot').click(function(){
+             $(this).toggleClass("chatbot");
+            });
+    </script>
+</body>
+</html>
