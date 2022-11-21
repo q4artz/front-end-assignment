@@ -6,3 +6,5 @@ to view the website. Run live server on main.html and by pressing the arrow butt
 -----------------------------------------------------------------------------------
 
 all footage and images used are not own by me as it belongs to their respectly owners. Please inform me if you would like me to take them down.
+
+fuck the group leader useless piece of shit.
